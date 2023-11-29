@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guilherme Landim - Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+</head>
+
+<body>
+    <header>
+        <h1>Guilherme Landim</h1>
+        <p>Desenvolvedor back-end</p>
+        <div class="social-icons">
+            <a href="https://www.instagram.com/landiim_04/" target="_blank"><i class="fab fa-instagram social-icon"></i></a>
+            <a href="https://www.linkedin.com/in/guilherme-landim-62a40123b/" target="_blank"><i class="fab fa-linkedin social-icon"></i></a>
+            <a href="https://github.com/seu-usuario-github" target="_blank"><i class="fab fa-github social-icon"></i></a>
+        </div>
+    </header>
+    
+    <section id="about-section">
+        <h2>Sobre Mim</h2>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium libero praesentium mollitia unde iure
+            eos earum rerum corrupti, eaque architecto? Placeat cupiditate voluptatum corrupti hic harum doloremque
+            debitis tenetur ipsa.</p>
+    </section>
+
+    <section id="projects-section">
+        <h2>Projetos</h2>
+        <div class="project" id="project1">
+            <h3>Projeto 1</h3>
+            <div class="button-group">
+                <a href="#" class="button" onclick="showDetails('project1', event)">Descrição e Detalhes</a>
+                <button class="button" onclick="removeProject('project1')">Remover Projeto</button>
+                <button class="button" onclick="downloadProject('project1')">Baixar Projeto</button>
+                <button class="button" onclick="viewCode('project1')">Visualizar Código</button>
+            </div>
+            <div class="description-details-container">
+                <div class="description-container">
+                    <p class="project-description"></p>
+                    <textarea id="project1-description" placeholder="Descrição" rows="3" style="display: none;"></textarea>
+                </div>
+                <div class="details-container">
+                    <p class="project-details-text"></p>
+                    <textarea id="project1-details" placeholder="Detalhes" rows="5" style="display: none;"></textarea>
+                </div>
+            </div>
+            <div class="project-details" style="display: none;">
+                <p class="project-description"></p>
+                <p class="project-details-text"></p>
+            </div>
+        </div>
+        <div class="add-remove-project">
+            <input type="file" id="fileInput" style="display: none;" onchange="addProject(this)">
+            <button class="button" onclick="openFileInput()">Adicionar Projeto</button>
+            <button class="button" onclick="removeLastProject()">Remover Último Projeto</button>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Seu Nome. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/FileSaver.js/2.0.5/FileSaver.min.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,243 @@
+body {
+    font-family: 'Open Sans';
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+}
+
+.social-icon {
+    font-size: 49px !important;
+}
+
+.social-icons a {
+    text-decoration: none;
+    color: white;
+}
+
+.social-icons i {
+    font-size: 32px;
+    margin: 0 10px;
+    transition: color 0.3s;
+}
+
+.social-icons i:hover {
+    color: #ef476f; /* Cor quando o mouse passa por cima */
+}
+
+header {
+    background-color: #2d3142;
+    color: #edf2f4;
+    text-align: center;
+    padding: 1em;
+}
+
+section {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #edf2f4;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2, h3 {
+    color: #2d3142;
+}
+
+.project {
+    margin-bottom: 20px;
+    border: 1px solid #d3d3d3;
+    padding: 15px;
+    border-radius: 8px;
+    transition: transform 0.3s, opacity 0.3s;
+    opacity: 1;
+}
+
+.project:hover {
+    transform: scale(1.05);
+}
+
+.project a,
+.project button,
+.add-remove-project button,
+.project button.save-button {
+    font-family: 'Garamond';
+    font-size: 20px;
+}
+
+.project a {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #ef476f;
+    color: #edf2f4;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+.project a:hover {
+    background-color: #d42b53;
+}
+
+.project button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2d3142;
+    color: #edf2f4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project button:hover {
+    background-color: #1b202c;
+}
+
+.project-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.add-remove-project {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.project-description {
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 16px;
+    color: #333;
+}
+
+.description-container textarea,
+.details-container textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: border-color 0.3s;
+}
+
+.description-container textarea:focus,
+.details-container textarea:focus {
+    border-color: #ef476f;
+}
+
+.description-container textarea::placeholder,
+.details-container textarea::placeholder {
+    color: #999;
+    font-style: italic;
+}
+
+.details-container textarea {
+    background-color: #e6e6e6;
+}
+
+.project-description,
+.project-details-text {
+    font-size: 16px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.project-details-text {
+    font-style: italic;
+    color: #5e5e5e;
+}
+
+.project-details {
+    background-color: #f5f5f5;
+    padding: 10px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.project-description-label,
+.project-details-label {
+    font-weight: bold;
+    color: #333;
+}
+
+.add-remove-project button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    background-color: #2d3142;
+    color: #edf2f4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 8px;
+    border: 1px solid #d3d3d3;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+.project button.save-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #2d3142;
+    color: #edf2f4;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.project button.save-button:hover {
+    background-color: #1b202c;
+}
+
+.add-remove-project button:hover {
+    background-color: #1b202c;
+}
+
+footer {
+    background-color: #2d3142;
+    color: #edf2f4;
+    text-align: center;
+    padding: 1em 0;
+}
+
+/* Regras de Mídia para Responsividade */
+
+@media only screen and (max-width: 600px) {
+    header {
+        padding: 0.5em;
+    }
+
+    section {
+        padding: 10px;
+    }
+
+    .project {
+        padding: 10px;
+    }
+
+    .project a,
+    .project button,
+    .add-remove-project button,
+    .project button.save-button {
+        font-size: 16px;
+    }
+
+    .social-icon {
+        font-size: 36px !important;
+    }
+}
+
+
+
+
